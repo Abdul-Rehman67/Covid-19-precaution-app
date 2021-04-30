@@ -1,4 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    --red: #ff4f5b;
+}
+
 * {
     margin: 0%;
     padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: cubic-bezier(.16, .8, .62, 1.52);
+    text-transform: capitalize;
+}
+
+::selection {
+    background: var(--red);
+    color: #fff;
+}
+
+html {
+    font-size: 63%;
+    overflow-x: hidden;
+}
+
+
+/* html::-webkit-scrollbar {
+    width: 1.2rem;
+}
+
+html::-webkit-scrollbar-track {
+    width: 1.2rem;
+    background: #000;
+}
+
+html::-webkit-scrollbar-thumb {
+    width: 1.2rem;
+    background: var(--red);
+} */
+
+body {
+    background-color: #fff;
+    height: 200rem;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 2.5rem 7%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo {
+    font-size: 2.5rem;
+    color: #666;
+}
+
+header .logo span {
+    font-size: 2.5rem;
+    color: #666;
+    color: var(--red);
+}
+
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navbar ul li {
+    margin-left: 2.5rem;
+}
+
+header .navbar ul li a {
+    color: #999;
+    font-size: 2rem;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+    color: var(--red);
+    border-bottom: 0.1rem solid var(--red);
+    padding: .7rem 0;
+}
+
+#menu {
+    font-size: 2rem;
+    color: #999;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* media quries for reposnsive  */
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    /* html::-webkit-scrollbar-track {
+        width: 1.2rem;
+        background: #000;
+    }
+    html::-webkit-scrollbar-thumb {
+        width: 1.2rem;
+        background: var(--red);
+    }
+    html::-webkit-scrollbar {
+        width: 1.2rem;
+    } */
+}
+
+@media (max-width: 768px) {
+    #menu {
+        display: block;
+    }
+    header .navbar {
+        position: fixed;
+        top: 8rem;
+        left: -120%;
+        height: 100%;
+        width: 100%;
+        background: #eee;
+        border-top: .2rem solid rgba(0, 0, 0, .1);
+    }
+    header .navbar ul {
+        flex-flow: column;
+        padding: 2rem;
+    }
+    header .navbar li {
+        text-align: center;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    header .navbar ul li a {
+        display: block;
+        padding: 1rem;
+    }
+    header .navbar ul li a.active,
+    header .navbar ul li a:hover {
+        padding: 1rem;
+        background: var(--red);
+        color: #fff;
+        border: none;
+        border-radius: 5rem;
+    }
+    header .navbar.nav-toggle {
+        left: 0;
+    }
+    /* html::-webkit-scrollbar-track {
+        width: 1.2rem;
+        background: #000;
+    }
+    html::-webkit-scrollbar-thumb {
+        width: 1.2rem;
+        background: var(--red);
+    }
+    html::-webkit-scrollbar {
+        width: 1.2rem; */
+}
+
+
 }
