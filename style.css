@@ -225,6 +225,60 @@ section {
     justify-content: center;
     flex-wrap: wrap;
 }
+.symtom .content{
+    flex: 1 1 40rem;
+
+}
+.symtom .image{
+    flex: 1 1 40rem
+}
+.symtom .image img{
+    width: 100%;
+}
+.symtom .content p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #999;
+}
+.symtom .content ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0
+}
+.symtom .content ul .two{
+    padding-left: 4.5rem;
+
+}
+.symtom .content ul li{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: #666;
+    padding: .5rem 0;
+}
+.prevent {
+    background: #222;
+}
+.prevent .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+
+
+}
+.prevent .row .image{
+    flex: 1 1 37rem;
+    height: 35rem;
+    text-align: center;
+}
+.prevent .row .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
 
 
 /* media quries for reposnsive  */
