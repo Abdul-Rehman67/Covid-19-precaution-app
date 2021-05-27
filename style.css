@@ -263,6 +263,7 @@ section {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+   
     padding: 2rem 0;
 
 
@@ -276,7 +277,26 @@ section {
     height: 100%;
     width: 100%;
     object-fit: cover;
+   
 
+}
+.prevent .row .content{
+    padding: 2rem 0;
+    flex: 1 1 37rem 
+}
+.prevent .row .content .heading{
+    color: #fff;
+}
+.prevent .row .content p{
+    font-size: 1.5rem;
+    color: #aaa;
+    padding: 1rem 0;
+}
+.prevent .row .content ul li{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: #aaa;
+    padding: .5rem;
 }
 
 
@@ -328,6 +348,9 @@ section {
     }
     .home .content {
         text-align: center;
+    }
+    .prevent .row:last-child{
+        flex-flow: column-reverse;
     }
 }
 
