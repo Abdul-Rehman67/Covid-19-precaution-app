@@ -342,6 +342,18 @@ section {
     background: var(--red);
     border-radius: 5rem;
 }
+.spread .heading{
+    text-align: center;
+    padding: 1rem;
+}
+.spread .image{
+    height: 80vh;
+    width: 100%;
+    background: url(./images/map.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
 
 /* media quries for reposnsive  */
 
